@@ -3,7 +3,7 @@ def my_collect(collection)
   updated_collection = []
   while i < collection.length
     # code here
-    # updated_collection
+    my_collect(collection)
   i += 1
 end
   updated_collection
