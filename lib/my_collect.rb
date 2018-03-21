@@ -10,3 +10,4 @@ def my_collect(collection)
 end
   updated_collection
 end
+end
