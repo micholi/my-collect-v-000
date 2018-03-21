@@ -3,8 +3,9 @@ def my_collect(collection)
   updated_collection = []
   while i < collection.length
     # code here
-    first_name = yield(collection[i]).split(" ").first
-    updated_collection << first_name
+    name = yield(collection[i])
+    my_collect(collection) do |name|
+    updated_collection << name
     i += 1
 end
   updated_collection
